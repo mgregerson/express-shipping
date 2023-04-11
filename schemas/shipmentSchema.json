@@ -6,7 +6,8 @@
   "type": "object",
   "properties": {
     "productId": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 1000
     },
     "name": {
       "type": "string",
