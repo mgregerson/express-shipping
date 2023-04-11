@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://ourfakeshipment.company.com/order.schema.json",
+  "title": "Shipment",
+  "description": "Order for a new shipment",
+  "type": "object",
+  "properties": {
+    "productId": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "addr": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "zip": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 10
+    }
+  },
+  "additionalProperties": false,
+  "required": ["productId", "name", "addr", "zip"]
+}
